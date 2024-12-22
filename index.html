@@ -3,20 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Developer Portfolio</title>
+    <title>Kudzaishe Mukungurutse | Full Stack Software Engineer</title>
+    <meta name="description" content="Full Stack Software Engineer specializing in creating innovative, user-friendly applications with expertise in React, Node.js, Python, and MongoDB.">
+    <meta name="keywords" content="Full Stack Developer, Software Engineer, Web Development, React, Node.js, Python, MongoDB">
+    <meta name="author" content="Kudzaishe Mukungurutse">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kudzaishe Mukungurutse | Full Stack Software Engineer">
+    <meta property="og:description" content="Full Stack Software Engineer specializing in creating innovative, user-friendly applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devwithkudzie.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://devwithkudzie.com">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Kudzaishe Mukungurutse",
+      "jobTitle": "Full Stack Software Engineer",
+      "url": "https://devwithkudzie.com",
+      "sameAs": [
+        "https://github.com/kudziemuks",
+        "https://www.linkedin.com/in/kudzaishe-mukungurutse-12925131a"
+      ],
+      "knowsAbout": ["Web Development", "React", "Node.js", "Python", "MongoDB"]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <a href="#" class="logo">
-                <span>DevWithKudzi</span>
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="#" class="logo" aria-label="DevWithKudzie">
+                <span>DevWithKudzie</span>
             </a>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-social">
+                <a href="https://github.com/kudziemuks" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kudzaishe-mukungurutse-12925131a" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,268 +62,413 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="title-container">
-                    <p class="greeting">Hello, I'm</p>
-                    <h1><span class="highlight">Kudzaishe Mukungurutse</span></h1>
-                    <h2>Full Stack Software Engineer</h2>
-                </div>
-                <div class="description">
-                    <p>Transforming ideas into seamless digital experiences</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Python</span>
-                        <span>MongoDB</span>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="hero-background" role="presentation"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="title-container">
+                        <p class="greeting">Hello, I'm</p>
+                        <h1><span class="highlight">Kudzaishe Mukungurutse</span></h1>
+                        <h2>Full Stack Software Engineer</h2>
                     </div>
-                </div>
-                <div class="cta-container">
-                    <a href="#contact" class="cta-button primary">Get in Touch</a>
-                    <a href="projects.html" class="cta-button secondary">View Work</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Combined About & Technical Expertise Section -->
-    <section id="about" class="about">
-        <div class="about-container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="bio-container">
-                    <p class="bio">A passionate full-stack software engineer specializing in creating innovative, user-friendly applications. I combine technical expertise with creative problem-solving to build high-performance solutions that deliver exceptional user experiences.</p>
-                    <div class="key-points">
-                        <div class="key-point">
-                            <i class="fas fa-code"></i>
-                            <h4>Full Stack Development</h4>
-                            <p>End-to-end application development with modern technologies</p>
-                        </div>
-                        <div class="key-point">
-                            <i class="fas fa-rocket"></i>
-                            <h4>Performance Optimization</h4>
-                            <p>Building high-performance, scalable solutions</p>
-                        </div>
-                        <div class="key-point">
-                            <i class="fas fa-users"></i>
-                            <h4>Team Collaboration</h4>
-                            <p>Effective communication and agile methodologies</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="expertise-content">
-                    <h3 class="expertise-title">Technical Expertise</h3>
-                    <div class="skill-category">
-                        <h4>Front-End</h4>
-                        <div class="skill-tags">
+                    <div class="description">
+                        <p>Transforming ideas into seamless digital experiences</p>
+                        <div class="tech-stack">
                             <span>React</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Back-End</h4>
-                        <div class="skill-tags">
                             <span>Node.js</span>
-                            <span>Express</span>
-                            <span>Django</span>
-                            <span>Spring Boot</span>
                             <span>Python</span>
-                            <span>Java</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Databases</h4>
-                        <div class="skill-tags">
-                            <span>MySQL</span>
-                            <span>PostgreSQL</span>
                             <span>MongoDB</span>
-                            <span>Firebase</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>DevOps Tools</h4>
-                        <div class="skill-tags">
-                            <span>Docker</span>
-                            <span>Kubernetes</span>
-                            <span>Jenkins</span>
-                            <span>Git</span>
-                            <span>AWS</span>
-                            <span>Azure</span>
-                            <span>Google Cloud</span>
+                    <div class="cta-container">
+                        <a href="#contact" class="cta-button primary">Get in Touch</a>
+                        <a href="projects.html" class="cta-button secondary">View Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combined About & Technical Expertise Section -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="bio-container">
+                        <p class="bio">A passionate full-stack software engineer specializing in creating innovative, user-friendly applications. I combine technical expertise with creative problem-solving to build high-performance solutions that deliver exceptional user experiences.</p>
+                        <div class="key-points">
+                            <div class="key-point">
+                                <i class="fas fa-code"></i>
+                                <h4>Full Stack Development</h4>
+                                <p>End-to-end application development with modern technologies</p>
+                            </div>
+                            <div class="key-point">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Performance Optimization</h4>
+                                <p>Building high-performance, scalable solutions</p>
+                            </div>
+                            <div class="key-point">
+                                <i class="fas fa-users"></i>
+                                <h4>Team Collaboration</h4>
+                                <p>Effective communication and agile methodologies</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>Other Technologies</h4>
-                        <div class="skill-tags">
-                            <span>REST APIs</span>
-                            <span>GraphQL</span>
-                            <span>WebSockets</span>
-                            <span>Firebase</span>
-                            <span>Redis</span>
+
+                    <div class="expertise-content">
+                        <h3 class="expertise-title">Technical Expertise</h3>
+                        <div class="skill-category">
+                            <h4>Front-End</h4>
+                            <div class="skill-tags">
+                                <span>React</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Back-End</h4>
+                            <div class="skill-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>Django</span>
+                                <span>Spring Boot</span>
+                                <span>Python</span>
+                                <span>Java</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <div class="skill-tags">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>MongoDB</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>DevOps Tools</h4>
+                            <div class="skill-tags">
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>Jenkins</span>
+                                <span>Git</span>
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>Google Cloud</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Other Technologies</h4>
+                            <div class="skill-tags">
+                                <span>REST APIs</span>
+                                <span>GraphQL</span>
+                                <span>WebSockets</span>
+                                <span>Firebase</span>
+                                <span>Redis</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="services-container">
-            <h2 class="section-title">What I Offer</h2>
-            <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="services-container">
+                <h2 class="section-title">What I Offer</h2>
+                <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning & AI Integration</h3>
+                        <ul class="service-features">
+                            <li>AI-Driven Features & Recommendations</li>
+                            <li>Data Visualization & Analytics</li>
+                            <li>Natural Language Processing (NLP)</li>
+                            <li>Chatbots & Voice Assistants</li>
+                        </ul>
                     </div>
-                    <h3>Machine Learning & AI Integration</h3>
-                    <ul class="service-features">
-                        <li>AI-Driven Features & Recommendations</li>
-                        <li>Data Visualization & Analytics</li>
-                        <li>Natural Language Processing (NLP)</li>
-                        <li>Chatbots & Voice Assistants</li>
-                    </ul>
-                </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <ul class="service-features">
+                            <li>Cross-Platform Development</li>
+                            <li>Native App Development</li>
+                            <li>Mobile-First Design</li>
+                            <li>App Store Deployment</li>
+                        </ul>
                     </div>
-                    <h3>Mobile Development</h3>
-                    <ul class="service-features">
-                        <li>Cross-Platform Development</li>
-                        <li>Native App Development</li>
-                        <li>Mobile-First Design</li>
-                        <li>App Store Deployment</li>
-                    </ul>
-                </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <ul class="service-features">
+                            <li>API Development & Integration</li>
+                            <li>Database Design & Management</li>
+                            <li>Server-Side Logic Implementation</li>
+                            <li>Cloud Integration (AWS, Azure)</li>
+                        </ul>
                     </div>
-                    <h3>Backend Development</h3>
-                    <ul class="service-features">
-                        <li>API Development & Integration</li>
-                        <li>Database Design & Management</li>
-                        <li>Server-Side Logic Implementation</li>
-                        <li>Cloud Integration (AWS, Azure)</li>
-                    </ul>
-                </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <ul class="service-features">
+                            <li>Responsive Web Design</li>
+                            <li>UI/UX Implementation</li>
+                            <li>Modern Framework Development</li>
+                            <li>Performance Optimization</li>
+                        </ul>
                     </div>
-                    <h3>Frontend Development</h3>
-                    <ul class="service-features">
-                        <li>Responsive Web Design</li>
-                        <li>UI/UX Implementation</li>
-                        <li>Modern Framework Development</li>
-                        <li>Performance Optimization</li>
-                    </ul>
-                </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Solutions</h3>
+                        <ul class="service-features">
+                            <li>Custom E-commerce Development</li>
+                            <li>Payment Gateway Integration</li>
+                            <li>Inventory Management Systems</li>
+                            <li>Shopping Cart Implementation</li>
+                        </ul>
                     </div>
-                    <h3>E-commerce Solutions</h3>
-                    <ul class="service-features">
-                        <li>Custom E-commerce Development</li>
-                        <li>Payment Gateway Integration</li>
-                        <li>Inventory Management Systems</li>
-                        <li>Shopping Cart Implementation</li>
-                    </ul>
-                </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tachometer-alt"></i>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Website Optimization</h3>
+                        <ul class="service-features">
+                            <li>Performance Optimization</li>
+                            <li>SEO Implementation</li>
+                            <li>Security Enhancements</li>
+                            <li>Speed Optimization</li>
+                        </ul>
                     </div>
-                    <h3>Website Optimization</h3>
-                    <ul class="service-features">
-                        <li>Performance Optimization</li>
-                        <li>SEO Implementation</li>
-                        <li>Security Enhancements</li>
-                        <li>Speed Optimization</li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="projects-container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Showcasing my technical expertise through real-world applications</p>
-            
-            <div class="featured-projects-grid">
-                <div class="loading-spinner">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <span>Loading projects...</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's collaborate and bring your ideas to life</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-details">
-                        <a href="mailto:kudziemuks@gmail.com" class="contact-detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>kudziemuks@gmail.com</span>
-                        </a>
-                        <a href="tel:+263779297141" class="contact-detail-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+263 779 297 141</span>
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/kudziemuks" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kudzaishe-mukungurutse-12925131a" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <!-- Honeypot -->
-                    <input type="text" name="_honey" style="display: none;">
-                    <!-- Disable Captcha -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- Success Page -->
-                    <input type="hidden" name="_next" value="https://devwithkudzi.com/thank-you.html">
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="projects-container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my technical expertise through real-world applications</p>
+                
+                <div class="featured-projects-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="project-header">
+                                <h3><i class="fas fa-chart-line project-icon"></i></h3>
+                                <h3>
+                                    Expense Tracker
+                                </h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Build an application where users can track their expenses, categorize spending, 
+                                    and visualize their financial data in charts.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="skills-learned">
+                                <h4>Skills Learned</h4>
+                                <ul>
+                                    <li>Working with databases</li>
+                                    <li>Data visualization (Chart.js)</li>
+                                    <li>User authentication</li>
+                                    <li>Server-side logic</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-section">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-stack">
+                                    React,
+                                    Node.js,
+                                    Python,
+                                    MongoDB,
+                                    TensorFlow
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="https://github.com/kudziemuks/ecommerce-platform" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Source Code</span>
+                                    </a>
+                                    <a href="https://shop.devwithkudzi.com" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="project-header">
+                                <h3><i class="fas fa-list-check project-icon"></i></h3>
+                                <h3>To-Do List App</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Build a simple to-do list app where users can add, edit, delete, and mark tasks as complete. 
+                                    You can make it more complex by adding user authentication.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="skills-learned">
+                                <h4>Skills Learned</h4>
+                                <ul>
+                                    <li>CRUD operations</li>
+                                    <li>Basic back-end</li>
+                                    <li>Database interaction</li>
+                                    <li>Session management</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-section">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-stack">
+                                    HTML, CSS, JavaScript,
+                                    Node.js/Express,
+                                    MongoDB
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="https://github.com/kudziemuks/todo-app" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Source Code</span>
+                                    </a>
+                                    <a href="https://todo.devwithkudzi.com" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="project-header">
+                                <h3><i class="fas fa-cloud-sun project-icon"></i></h3>
+                                <h3>Weather App</h3>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-description">
+                                    Build an app that displays weather data based on a user's location or a specific city. 
+                                    You can pull weather data from an API like OpenWeather.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="skills-learned">
+                                <h4>Skills Learned</h4>
+                                <ul>
+                                    <li>Working with APIs</li>
+                                    <li>Handling JSON data</li>
+                                    <li>Async programming</li>
+                                    <li>Dynamic front-end updates</li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack-section">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-stack">
+                                    HTML, CSS, JavaScript,
+                                    OpenWeather API
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="https://github.com/kudziemuks/weather-app" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Source Code</span>
+                                    </a>
+                                    <a href="https://weather.devwithkudzi.com" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate and bring your ideas to life</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <a href="mailto:kudziemuks@gmail.com" class="contact-detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>kudziemuks@gmail.com</span>
+                            </a>
+                            <a href="tel:+263779297141" class="contact-detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+263 779 297 141</span>
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/kudziemuks" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kudzaishe-mukungurutse-12925131a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Success Page -->
+                        <input type="hidden" name="_next" value="https://devwithkudzi.com/thank-you.html">
+                        
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
-    <script type="module" src="assets/js/featured-projects.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 </body>
 </html> 

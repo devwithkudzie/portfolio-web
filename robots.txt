@@ -1,0 +1,16 @@
+# robots.txt for portfolio website
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Prevent access to sensitive files
+Disallow: /.env
+Disallow: /.gitignore
+Disallow: /node_modules/
+
+# Add sitemap location
+Sitemap: https://devwithkudzie.com/sitemap.xml
