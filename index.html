@@ -21,6 +21,7 @@
     <link rel="canonical" href="https://devwithkudzie.com">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -45,10 +46,6 @@
             <a href="#" class="logo" aria-label="DevWithKudzie">
                 <span>DevWithKudzie</span>
             </a>
-            <div class="nav-social">
-                <a href="https://github.com/kudziemuks" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/kudzaishe-mukungurutse-12925131a" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
             <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
@@ -267,153 +264,180 @@
         <section id="projects" class="projects">
             <div class="projects-container">
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Showcasing my technical expertise through real-world applications</p>
+                <p class="section-subtitle">Real-world solutions demonstrating end-to-end development expertise</p>
                 
                 <div class="featured-projects-grid">
+                    <!-- E-commerce Platform -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <div class="project-header">
-                                <h3><i class="fas fa-chart-line project-icon"></i></h3>
-                                <h3>
-                                    Expense Tracker
-                                </h3>
-                            </div>
-                            <div class="project-content">
-                                <p class="project-description">
-                                    Build an application where users can track their expenses, categorize spending, 
-                                    and visualize their financial data in charts.
-                                </p>
-                            </div>
-                          </div>
-                          <div class="flip-card-back">
-                            <div class="skills-learned">
-                                <h4>Skills Learned</h4>
-                                <ul>
-                                    <li>Working with databases</li>
-                                    <li>Data visualization (Chart.js)</li>
-                                    <li>User authentication</li>
-                                    <li>Server-side logic</li>
-                                </ul>
-                            </div>
-                            <div class="tech-stack-section">
-                                <h4>Technologies Used</h4>
-                                <div class="tech-stack">
-                                    React,
-                                    Node.js,
-                                    Python,
-                                    MongoDB,
-                                    TensorFlow
+                            <div class="flip-card-front">
+                                <div class="project-header">
+                                    <h3><i class="fas fa-shopping-cart project-icon"></i></h3>
+                                    <h3>E-commerce Platform</h3>
+                                </div>
+                                <div class="project-content">
+                                    <p class="project-description">
+                                        Full-stack e-commerce solution with real-time inventory management, 
+                                        secure payment processing, and advanced analytics dashboard.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="project-footer">
-                                <div class="project-links">
-                                    <a href="https://github.com/kudziemuks/ecommerce-platform" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>Source Code</span>
-                                    </a>
-                                    <a href="https://shop.devwithkudzi.com" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span>Live Demo</span>
-                                    </a>
+                            <div class="flip-card-back">
+                                <div class="skills-learned">
+                                    <h4>
+                                        Key Features 
+                                        <div class="feature-links">
+                                            <a href="https://github.com/kudziemuks" class="github-link" target="_blank">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://devwithkudzie.com" class="demo-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </h4>
+                                    <ul>
+                                        <li>Secure payment gateway integration</li>
+                                        <li>Real-time inventory tracking</li>
+                                        <li>Analytics dashboard</li>
+                                        <li>Mobile-responsive design</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack-section">
+                                    <h4>Technologies Used</h4>
+                                    <div class="tech-stack">
+                                        React, Node.js, MongoDB, Stripe API,
+                                        Redux, AWS, Docker
+                                    </div>
+                                </div>
+                                <div class="project-footer">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kudziemuks/ecommerce-platform" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                        <a href="https://shop.devwithkudzie.com" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <div class="project-header">
-                                <h3><i class="fas fa-list-check project-icon"></i></h3>
-                                <h3>To-Do List App</h3>
-                            </div>
-                            <div class="project-content">
-                                <p class="project-description">
-                                    Build a simple to-do list app where users can add, edit, delete, and mark tasks as complete. 
-                                    You can make it more complex by adding user authentication.
-                                </p>
-                            </div>
-                          </div>
-                          <div class="flip-card-back">
-                            <div class="skills-learned">
-                                <h4>Skills Learned</h4>
-                                <ul>
-                                    <li>CRUD operations</li>
-                                    <li>Basic back-end</li>
-                                    <li>Database interaction</li>
-                                    <li>Session management</li>
-                                </ul>
-                            </div>
-                            <div class="tech-stack-section">
-                                <h4>Technologies Used</h4>
-                                <div class="tech-stack">
-                                    HTML, CSS, JavaScript,
-                                    Node.js/Express,
-                                    MongoDB
-                                </div>
-                            </div>
-                            <div class="project-footer">
-                                <div class="project-links">
-                                    <a href="https://github.com/kudziemuks/todo-app" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>Source Code</span>
-                                    </a>
-                                    <a href="https://todo.devwithkudzi.com" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span>Live Demo</span>
-                                    </a>
-                                </div>
-                            </div>
-                          </div>
                         </div>
                     </div>
-                    
+
+                    <!-- CRM System -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <div class="project-header">
-                                <h3><i class="fas fa-cloud-sun project-icon"></i></h3>
-                                <h3>Weather App</h3>
-                            </div>
-                            <div class="project-content">
-                                <p class="project-description">
-                                    Build an app that displays weather data based on a user's location or a specific city. 
-                                    You can pull weather data from an API like OpenWeather.
-                                </p>
-                            </div>
-                          </div>
-                          <div class="flip-card-back">
-                            <div class="skills-learned">
-                                <h4>Skills Learned</h4>
-                                <ul>
-                                    <li>Working with APIs</li>
-                                    <li>Handling JSON data</li>
-                                    <li>Async programming</li>
-                                    <li>Dynamic front-end updates</li>
-                                </ul>
-                            </div>
-                            <div class="tech-stack-section">
-                                <h4>Technologies Used</h4>
-                                <div class="tech-stack">
-                                    HTML, CSS, JavaScript,
-                                    OpenWeather API
+                            <div class="flip-card-front">
+                                <div class="project-header">
+                                    <h3><i class="fas fa-users-gear project-icon"></i></h3>
+                                    <h3>CRM System</h3>
+                                </div>
+                                <div class="project-content">
+                                    <p class="project-description">
+                                        Modern CRM platform built with React, featuring real-time updates, 
+                                        automated workflows, and a responsive dashboard for lead management.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="project-footer">
-                                <div class="project-links">
-                                    <a href="https://github.com/kudziemuks/weather-app" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>Source Code</span>
-                                    </a>
-                                    <a href="https://weather.devwithkudzi.com" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        <span>Live Demo</span>
-                                    </a>
+                            <div class="flip-card-back">
+                                <div class="skills-learned">
+                                    <h4>
+                                        Key Features 
+                                        <div class="feature-links">
+                                            <a href="https://github.com/kudziemuks" class="github-link" target="_blank">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://devwithkudzie.com" class="demo-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </h4>
+                                    <ul>
+                                        <li>Real-time dashboard with Redux</li>
+                                        <li>GraphQL API integration</li>
+                                        <li>OAuth2 authentication</li>
+                                        <li>Advanced data visualization</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack-section">
+                                    <h4>Technologies Used</h4>
+                                    <div class="tech-stack">
+                                        React, TypeScript, Redux Toolkit,
+                                        GraphQL, Node.js, MongoDB
+                                    </div>
+                                </div>
+                                <div class="project-footer">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kudziemuks/crm-system" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                        <a href="https://crm.devwithkudzie.com" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate Platform -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="project-header">
+                                    <h3><i class="fas fa-house project-icon"></i></h3>
+                                    <h3>Real Estate Platform</h3>
+                                </div>
+                                <div class="project-content">
+                                    <p class="project-description">
+                                        Property management system with virtual tours, 
+                                        automated scheduling, and advanced search capabilities.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="skills-learned">
+                                    <h4>
+                                        Key Features 
+                                        <div class="feature-links">
+                                            <a href="https://github.com/kudziemuks" class="github-link" target="_blank">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://devwithkudzie.com" class="demo-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </h4>
+                                    <ul>
+                                        <li>Virtual property tours</li>
+                                        <li>Automated appointment scheduling</li>
+                                        <li>Advanced property search</li>
+                                        <li>Real-time notifications</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack-section">
+                                    <h4>Technologies Used</h4>
+                                    <div class="tech-stack">
+                                        Next.js, Node.js, MongoDB,
+                                        WebRTC, Socket.io, AWS S3
+                                    </div>
+                                </div>
+                                <div class="project-footer">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kudziemuks/real-estate-platform" class="project-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                            <span>Source Code</span>
+                                        </a>
+                                        <a href="https://realestate.devwithkudzie.com" class="project-link" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            <span>Live Demo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -440,7 +464,7 @@
                         <div class="social-links">
                             <a href="https://github.com/kudziemuks" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/kudzaishe-mukungurutse-12925131a" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                     <form class="contact-form" id="contactForm">
@@ -469,6 +493,7 @@
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/projects.js"></script>
 
 </body>
 </html> 

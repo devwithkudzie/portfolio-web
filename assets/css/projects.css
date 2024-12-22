@@ -1,0 +1,297 @@
+/* Projects Section Styles */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.featured-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Flip Card Styles */
+.flip-card {
+    background-color: transparent;
+    min-height: 350px;
+    perspective: 1000px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    text-align: center;
+    transition: transform 0.8s, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Hover effect only for non-touch devices */
+@media (hover: hover) {
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Touch device handling */
+@media (hover: none) {
+    .flip-card.touched .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.flip-card-front {
+    background: var(--card-bg-light);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.flip-card-back {
+    background: var(--card-bg-secondary, #2c3e50);
+    color: var(--text-light);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Project Content Styles */
+.project-header {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: var(--card-header-bg);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 9px 9px 0 0;
+}
+
+.project-header h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.flip-card:hover .project-icon {
+    transform: scale(1.1);
+    color: var(--accent-primary);
+}
+
+.project-description {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    padding: 0 1.5rem;
+}
+
+.skills-learned {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.skills-learned ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-learned li {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.skills-learned li:before {
+    content: "•";
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.tech-stack-section {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Project Links */
+.project-footer {
+    margin-top: auto;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Optimizations */
+@media screen and (max-width: 768px) {
+    .featured-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .flip-card {
+        min-height: 300px;
+    }
+
+    .flip-card-inner,
+    .flip-card-front,
+    .flip-card-back {
+        min-height: 300px;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .skills-learned li {
+        font-size: 0.85rem;
+    }
+
+    .project-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Touch device JavaScript handler */
+.flip-card.touch-device .flip-card-inner {
+    transition: none;
+}
+
+/* Add these styles for the GitHub icon in key features */
+.skills-learned h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.feature-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.github-link {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: var(--accent-color, #3498db);
+}
+
+.demo-link {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.demo-link:hover {
+    color: var(--accent-color, #3498db);
+}
+
+/* Add CSS Variables for modern colors */
+:root {
+    --card-bg-light: #1a1f2e;    /* Dark blue-gray background */
+    --card-header-bg: #242b3d;   /* Slightly lighter blue-gray for header */
+    --text-primary: #ffffff;      /* White text for headers */
+    --text-secondary: #cbd5e1;    /* Light gray for body text */
+    --accent-primary: #60a5fa;    /* Bright blue accent */
+    --border-color: #2d3748;      /* Dark border */
+    --shadow-color: rgba(0, 0, 0, 0.3);  /* Darker shadow */
+}
+
+/* Update Flip Card Front styles */
+.flip-card-front {
+    background: var(--card-bg-light);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+/* Update Project Header styles */
+.project-header {
+    background: linear-gradient(to right, var(--card-header-bg), #1e2433);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-header h3 {
+    color: var(--text-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    color: var(--accent-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Update Project Description styles */
+.project-description {
+    color: var(--text-secondary);
+}
+
+/* Enhanced hover effects */
+.flip-card:hover .flip-card-inner {
+    box-shadow: 0 12px 24px var(--shadow-color);
+}
+
+.flip-card:hover .project-icon {
+    color: var(--accent-primary);
+    filter: brightness(1.2);
+}
+  
