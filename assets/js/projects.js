@@ -10,15 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
         flipCards.forEach(card => {
             card.classList.add('touch-device');
             
-            card.addEventListener('click', function() {
-                // Remove 'touched' class from all other cards
+            card.addEventListener('click', function(e) {
+                e.stopPropagation();
                 flipCards.forEach(otherCard => {
                     if (otherCard !== card) {
                         otherCard.classList.remove('touched');
                     }
                 });
                 
-                // Toggle 'touched' class on clicked card
                 this.classList.toggle('touched');
             });
         });
